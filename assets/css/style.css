@@ -1,0 +1,232 @@
+@import url("fira-sans.css");
+/* @import url("fontawesome.css"); */
+
+:root {
+	font-size: 18px;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    font-family: "Fira Sans", sans-serif;
+    background-color: white;
+    padding: 1rem;
+    border: .25rem solid black;
+    border-radius: 1rem;
+    max-width: 1024px;
+    margin: 1rem auto;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+}
+
+.logo {
+    margin: 0rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    color: white;
+    padding: .5rem;
+    border-radius: 1000px;
+    border: .2rem solid white;
+    width: fit-content;
+    max-width: 100%;
+}
+
+.logo .svg-wrapper {
+    background-color: white;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .25rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.logo svg {
+    width: 1.5rem;
+    margin-top: .14rem;
+    fill: black;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.list-services {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+.list-services li {
+    background-color: black;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 1000px;
+    text-transform: uppercase;
+    font-size: .75rem;
+    text-align: center;
+}
+
+.list-services li:nth-of-type(2) {
+    background-color: #222;
+}
+
+.list-services li:nth-of-type(3) {
+    background-color: #444;
+}
+
+.list-services li:nth-of-type(4) {
+    background-color: #666;
+}
+
+.avatar {
+    max-width: 250px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.welcome-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .5rem;
+}
+
+.welcome-wrapper svg {
+    width: 1.25rem;
+    fill: black;
+}
+
+h3 {
+    text-align: left;
+    font-size: 1.75rem;
+    width: fit-content;
+}
+
+p {
+    line-height: 1.75rem;
+}
+
+.btn-wrapper {
+    margin: auto;
+}
+
+button {
+    padding: 1.25rem 3rem;
+    width: fit-content;
+    margin: auto;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: "Fira Sans", sans-serif;
+    background-color: black;
+    color: white;
+    border-radius: .25rem;
+    border: none;
+}
+
+.section-services-overview {
+    background-color: black;
+    color: white;
+    border-radius: .5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.section-services-overview .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.section-services-overview .grid .grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: .25rem;
+    padding: 2rem;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    gap: 1rem;
+    text-align: center;
+}
+
+.section-services-overview .grid .grid-item:nth-of-type(2) {
+    background-color: #ddd;
+}
+
+.section-services-overview .grid .grid-item:nth-of-type(3) {
+    background-color: #bbb;
+}
+
+.section-services-overview .grid .grid-item:nth-of-type(4) {
+    background-color: #999;
+}
+
+.section-services-overview .grid .grid-item > img {
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.section-services-overview h3 {
+    font-size: 1.25rem;
+}
