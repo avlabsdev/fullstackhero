@@ -65,15 +65,15 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: .25rem;
     width: 3rem;
     height: 3rem;
+    padding: .5rem;
 }
 
-.logo svg {
-    width: 1.5rem;
+.logo img {
     margin-top: .14rem;
     fill: black;
+    width: 100%;
 }
 
 h1 {
