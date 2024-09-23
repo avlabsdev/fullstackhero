@@ -180,6 +180,14 @@ p {
 
 .btn-wrapper {
     margin: auto;
+    display: flex;
+    gap: .25rem;
+}
+
+.btn-wrapper svg {
+    fill: white;
+    width: 1rem;
+    margin-left: .5rem;
 }
 
 button {
@@ -194,6 +202,9 @@ button {
     color: white;
     border-radius: .25rem;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-services-overview {
