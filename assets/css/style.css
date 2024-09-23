@@ -254,6 +254,10 @@ button {
     box-shadow: 0 0 1rem rgba(0, 0, 0, .25);
 }
 
+.btn-white svg {
+    margin-right: .5rem;
+}
+
 .section-services-overview .grid .grid-item:nth-of-type(2) {
     background-color: #ddd;
 }
