@@ -278,3 +278,19 @@ button {
 .section-services-overview h3 {
     font-size: 1.25rem;
 }
+
+footer {
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p svg {
+    margin-right: .5rem;
+    margin-bottom: .14rem;
+}
