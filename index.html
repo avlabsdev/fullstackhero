@@ -127,17 +127,24 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="section-inquire">
             <div class="container">
-                <form method="POST" id="form">
+                <form action="https://api.web3forms.com/submit" method="POST">
                     <h2>Inquire</h2>
                     <div class="form-wrapper">
+                        <input type="hidden" name="access_key" value="d305d49e-5a84-4313-9e4b-ef55144d0c54">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required>
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
                         <label for="message">Message:</label>
                         <textarea id="message" name="message" required></textarea>
+                        <!-- Honeypot Spam Protection -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <input type="hidden" name="redirect" value="#section-inquire">
+                        <!-- Show results on submission here - redirect will take you/keep you at the Inquire section of the page to be able to view the results. -->
+
                         <button type="submit" id="submitBtn">Submit</button>
                     </div>
                     <div id="result"></div>
