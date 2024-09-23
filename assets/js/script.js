@@ -10,3 +10,5 @@ for (let i = 0; i < gridItem.length; i++) {
         gridItemOverlay[i].style.display = 'none';
     });
 }
+
+let submitBtn = document.getElementById('submitBtn');
