@@ -222,6 +222,25 @@ button {
     text-decoration: none;
     gap: 1rem;
     text-align: center;
+    position: relative;
+}
+
+.grid-item-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .75);
+    color: white;
+    display: none;
+}
+
+.btn-white {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .25);
 }
 
 .section-services-overview .grid .grid-item:nth-of-type(2) {
