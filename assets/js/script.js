@@ -12,3 +12,7 @@ for (let i = 0; i < gridItem.length; i++) {
 }
 
 let submitBtn = document.getElementById('submitBtn');
+// Show results on submission here - redirect will take you/keep you at the Inquire section of the page to be able to view the results.
+// Functionality will be in the JS
+
+// add a dark theme option and do functionality in JS here
