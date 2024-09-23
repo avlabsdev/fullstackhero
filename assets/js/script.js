@@ -16,3 +16,8 @@ let submitBtn = document.getElementById('submitBtn');
 // Functionality will be in the JS
 
 // add a dark theme option and do functionality in JS here
+
+fetch('../db.json')
+    .then(response => response.json())
+    .then(data => console.log(data.posts[0].title))
+    .catch(error => console.log(error));
