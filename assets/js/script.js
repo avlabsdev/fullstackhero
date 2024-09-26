@@ -25,11 +25,4 @@ request.onerror = (event) => {
 request.onsuccess = (event) => {
   db = event.target.result;
 };
-
-
-db.onerror = (event) => {
-    // Generic error handler for all errors targeted at this database's
-    // requests!
-    console.error(`Database error: ${event.target.error?.message}`);
-  };
   
