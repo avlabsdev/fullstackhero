@@ -17,7 +17,19 @@ let submitBtn = document.getElementById('submitBtn');
 
 // add a dark theme option and do functionality in JS here
 
-fetch('../db.json')
-    .then(response => response.json())
-    .then(data => console.log(data.posts[0].title))
-    .catch(error => console.log(error));
+let db;
+const request = indexedDB.open("MyTestDatabase");
+request.onerror = (event) => {
+  console.error("Why didn't you allow my web app to use IndexedDB?!");
+};
+request.onsuccess = (event) => {
+  db = event.target.result;
+};
+
+
+db.onerror = (event) => {
+    // Generic error handler for all errors targeted at this database's
+    // requests!
+    console.error(`Database error: ${event.target.error?.message}`);
+  };
+  
